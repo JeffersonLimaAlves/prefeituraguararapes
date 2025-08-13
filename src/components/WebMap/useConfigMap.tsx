@@ -15,14 +15,14 @@ const useConfigMap = () => {
 
   useEffect(() => {
 
-    const initialExtent = [
-      [-8236579.5, -3995440.25],
-      [-3211304.5, 587688.5]
-    ];
+    const initialExtent = [[-5684699.97, -2471550.68], [-5594908.97, -2377480.22]];
+
+    const restrictExtent = [-5884699.97, -2571550.68, -5394908.97, -2277480.22]
 
     const view = new View({
       center: getCenter(boundingExtent(initialExtent)),
-      zoom: 5
+      zoom: 5,
+      extent: restrictExtent
     });
     
     view.setProperties({ initialExtent: initialExtent });
