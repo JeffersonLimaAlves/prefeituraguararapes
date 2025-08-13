@@ -1,0 +1,181 @@
+@import 'rsuite/styles/index.less';
+// @import '@bitlayer/geoui/style.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-family-base: 'Mulish', sans-serif;
+
+// font-size
+@font-size-large:       16px;
+@font-size-base:        14px;
+@font-size-small:       12px;
+@font-size-extra-small: 10px;
+
+// line-height: Unit-less `line-height` for use in components like buttons.
+@line-height-large-computed:  20px;
+@line-height-computed:        16px;
+@line-height-computed-sm:     16px;
+@line-height-computed-xs:     12px;
+
+@line-height-large:           unit((@line-height-large-computed / @font-size-large));
+@line-height-base:            unit((@line-height-computed / @font-size-base)); //1,142857142857143
+@line-height-small:           unit((@line-height-computed-sm / @font-size-small));
+@line-height-extra-small:     unit((@line-height-computed-xs / @font-size-extra-small));
+
+
+////// Colors
+@enable-dark-mode:      false;
+@enable-high-contrast:  false;
+
+@primary-color: #35AC46;
+
+@red:             #D83020;
+@yellow:          #EDD317;
+@green:           #35AC46;
+@blue:            #00619B;
+
+
+////// Spacing
+@border-radius:       0;
+
+// Form
+@form-group-margin-bottom:  1.14em;
+
+// Button
+.rs-btn-sm {
+  padding: 6px 12px;
+}
+
+.rs-uploader-text .rs-uploader-trigger-btn {
+  line-height: 16px;
+}
+
+.rs-btn-ghost.rs-btn-sm {
+  padding: 5px 12px;
+}
+
+// Picker Select
+
+.xrs-picker-toggle-value {
+  margin-left: 28px;
+}
+
+.rs-picker-select-menu-item {
+  position: relative;  
+}
+
+.rs-picker-default .rs-picker-toggle.rs-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+// Panel
+
+.rs-panel {
+  border-radius: 0;
+}
+
+.rs-panel-body {
+  overflow-y: auto;
+  // padding: 1em;
+}
+
+
+
+.taskCard > .rs-panel-body {
+  height: 100%;
+}
+
+
+// Drawer
+//@drawer-full-size-margin: 0;
+.rs-drawer-body {
+  padding: 0;
+}
+
+.rs-uploader-file-item-status > a {
+  display: none;
+}
+
+.demostrativoUploader > .rs-uploader-file-items {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.arqCustomTable {
+  height: 100%;
+  background-color: white;
+  border: solid lightgrey 1px;
+}
+
+.rs-sidenav {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.rs-footer {
+  background-color: var(--rs-navbar-default-bg);
+}
+
+
+.rs-list.dds-list, .rs-list-item.dds-list-item {
+  box-shadow: 0 0 0 var(--rs-list-border), 0 1px 0 var(--rs-list-border);
+}
+
+.dds-search {
+  box-shadow:
+    -1px -1px 0 var(--rs-list-border), 
+    1px -1px 0 var(--rs-list-border),
+    -1px -1px 0 var(--rs-list-border),
+    -1px 1px 0 var(--rs-list-border),
+    1px 1px 0 var(--rs-list-border);
+}
+
+.rs-tree-node {
+  margin: 0 0 0 0;
+  // padding-left: 0;
+}
+
+.rs-tree-node-label {
+  width:100%;
+  // padding-left: 0;
+}
+.rs-tree-node-label-content {
+  padding: 0;
+  border-top: 0;
+  border-bottom: 0;
+  width:100%;
+}
+
+
+div.hideStepButton > span {
+  display: none;
+}
+
+.html2canvas-container { width: 3000px !important; height: 3000px !important; }
+
+
+.dsTable {
+  border: solid #EDEDED 1px;
+  background-color: white;
+}
+
+.dsTableHeader {
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.dsTableRow {
+  font-size:0.9em;
+  font-weight: normal;
+  color: black;
+}
+
+.dsRowNoSelect {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+}
