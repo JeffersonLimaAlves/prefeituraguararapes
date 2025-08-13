@@ -10,7 +10,7 @@
     "coverage": "vitest run --coverage",
     "start": "vite",
     "start-stage": "vite --mode stage",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@fontsource/mulish": "^5.0.2",
